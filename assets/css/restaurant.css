@@ -1,0 +1,214 @@
+* {
+    outline: 1px solid red;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 22.5rem;
+}
+body, h1, h2, h3, p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+} 
+
+i.fa-regular.fa-heart {
+    font-size: 1.313rem;
+}
+
+i.fa-solid.fa-arrow-left {
+    font-size: 1.875rem;
+}
+
+i.fa-solid.fa-ustensils, i.fa-solid.fa-handshake-angle {
+    font-size: 0.813rem;
+}
+
+/** header **/
+header {
+    padding: 0.88rem 5.56rem 0.88rem 1.065rem;
+}
+
+.banner_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.62rem;    
+}
+
+.banner_logo--img {
+    width: 12.313rem;
+}
+
+.top_images {
+    height: 17.188rem;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    position: relative;
+    padding: 0 0.81rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    margin-top: -4rem;
+    background: var(--Background, #F6F6F6);
+}
+
+.menu_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1.94rem 1.06rem 0 1.06rem;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.menu_title--txt {
+    color: var(--Black, #101010);
+    font-family: Shrikhand;
+    font-size: 1.75rem;
+    font-weight: 400;
+    height: 1.688rem;
+}
+
+.menu_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.menu_cards h2 {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.menu_cards h3 {
+    font-family: Roboto;
+    font-size: 1.125rem;
+    font-weight: 600;    
+}
+
+.menu_cards p {
+    font-family: Roboto;
+    font-size: 0.938rem;
+    font-weight: 300;    
+}
+
+.menu_cards--btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.938rem;
+    border-radius: 0.938rem;
+    background: var(--White, #FFF);
+    box-shadow: 0 0.25rem 0.938rem 0 rgba(0, 0, 0, 0.10);
+}
+
+.menu_cards--btnprice {
+    display:flex;
+    align-items: flex-end;
+}
+.menu_btn {
+    display: flex;
+    justify-content: center;
+    padding: 1.75rem 0 2.5rem 0;
+}
+.menu_btn--color {
+    width: 11.625rem;
+    height: 3.125rem;
+    color: white;
+    border-color: transparent;
+    border-radius: 1.563rem;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0 0.25rem 0.938rem 0 rgba(0, 0, 0, 0.35);
+}
+/** Footer **/
+.footer-content {
+    background-color: #353535;
+    padding: 1.375rem 1.563rem;
+}
+
+.footer-content-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.44rem;
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0;
+    
+}
+
+.footer-content-ul-li {
+    list-style: none;
+}
+
+.footer-content-ul-li a {
+    display: flex;
+    text-decoration: none;
+}
+
+.footer-content-ul-li p {
+    color: white;
+}
+
+.footer-content-ul-li i {
+    margin-right: 0.688rem;
+    color: white;
+}
+
+/* Tablettes */
+@media (min-width: 49.625rem) {
+    
+}
+
+/* Desktop */
+@media (min-width: 64rem) {
+    header {
+        padding: 1.88rem 34rem 2.01rem 1.06rem;
+    }
+    .banner_logo {
+        display: flex;
+        justify-content: space-between;
+    }
+    .top_images {
+        width: 100%;
+    }
+/* menu */
+    .menu {
+        max-width: 1080px;
+        padding: 0 12rem;
+        margin: 0 auto;
+    }
+    .menu_title {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        padding-top: 3.19rem;
+    }
+    /* footer */
+    .footer-content {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        gap: 1rem;
+    }
+    .footer-content-ul {
+        display: flex;
+        flex-direction: row;
+        gap: 0.44rem;
+        margin-bottom: 0;
+    }
+    .footer_btn1 {
+        width: 10.5rem;
+    }
+    .footer_btn2 {
+        width: 8.125rem;
+    }
+}
